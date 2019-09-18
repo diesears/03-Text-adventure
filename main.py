@@ -80,10 +80,10 @@ def main():
     gameFile = 'game.json'
 
     game = {}
-    with open("zork.json") as json_file:
+    with open("game.json") as json_file:
         game = json.load(json_file)
 
-    current = 'WHOUS'
+    current = 'BRIG'
     win = ['END']
     lose = []
     moves = 0
