@@ -1,2 +1,1 @@
-# 03-Text-adventure
-Our first text adventure
+Hello! I am very excited to present to you "The Mutany of Treasure Cove," my first ever text adventure created for my game technology class at Indiana University. Make sure to check out the list of available verbs and have fun!
