@@ -77,16 +77,7 @@
         "name": "Coral Reef",
         "desc": "You decide to try your luck at navigating the reef. Just as you think you can pass through safely, a large rock pierces the bottom of the life boat. You sink slowly as the mermaids begin to swarm around you. YOU LOSE! TYPE QUIT TO EXIT.",
         "exits": [
-          {
-            "verb": "",
-            "target": "",
-            "condition": ""
-          },
-          {
-            "verb": "",
-            "target": "",
-            "condition": ""
-          }
+         
         ],
         "inventory": []
       },
