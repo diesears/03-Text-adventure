@@ -9,47 +9,142 @@
       { "v": "EAST",    "map": "EAST"  },
       { "v": "E",       "map": "EAST"  },
       { "v": "WEST",    "map": "WEST"  },
-      { "v": "W",       "map": "WEST"  }
+      { "v": "W",       "map": "WEST"  },
+      { "v": "BREAK",   "map": "BREAK" },
+      { "v": "LEFT",    "map": "LEFT"  },
+      { "v": "RIGHT",   "map": "RIGHT" },
+      { "v": "JUMP",    "map": "JUMP"  },
+      { "v": "CLIMB",   "map": "CLIMB" },
+      { "v": "SWIM",    "map": "SWIM"  }
     ],
 
     "rooms": {
       "BRIG": {
-        "name": "The Ship's Brig",
-        "desc": "This is a cold and wet prison cell aboard the San Felipe, a caravel in the Spanish Armada. Your crew has committed a mutany, sailed ashore to find the buried treasure, and left you, their captain, to die",
+        "name": "Ship's Brig",
+        "desc": "This is a cold and wet prison cell aboard the San Felipe, a caravel in the Spanish Armada. Your crew has committed a mutany, sailed ashore to find the buried treasure, and left you, their captain, to die. The door is held together by a rotten board.",
         "exits": [
           {
             "verb": "BREAK",
             "target": "DECK",
-            "condition": ""          },
+            "condition": ""          }
+         
+        ],
+        "inventory": []
+      },
+      "DECK": {
+        "name": "Ship's Deck",
+        "desc": "You have broken the door and reached the main level of the ship. To the east you see one small life boat still remaining. Opposite the boat is a door to the captains quarters.",
+        "exits": [
           {
-            "verb": "SOUTH",
-            "target": "LOC2",
+            "verb": "EAST",
+            "target": "LIFEB",
             "condition": ""
           },
           {
             "verb": "WEST",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "EAST",
-            "target": "LOC2",
+            "target": "CAPQ",
             "condition": ""
           }
         ],
         "inventory": []
       },
-      "DECK": {
-        "name": "The Ship's Deck",
-        "desc": "You have reached the main level of the ship. To the east you see one small life boat still remaining. Opposite the boat is a door to the captains quarters",
+      "LIFEB": {
+        "name": "Life Boat",
+        "desc": "You lower the boat down to the water. Between you and the island to the left is a coral reef with man-eating mermaids, to the right is a cave with a flickering dim light.",
         "exits": [
           {
-            "verb": "SOUTH",
-            "target": "LOC2",
+            "verb": "LEFT",
+            "target": "REEF",
             "condition": ""
           },
+          {
+            "verb": "RIGHT",
+            "target": "CAVE",
+            "condition": ""
+          }
         ],
         "inventory": []
-
+      },
+      "CAPQ": {
+        "name": "Captain's Quarters",
+        "desc": "You enter the quarters and look inside your desk to find all your belongings have been stolen by the crew. You sit down to take a drink of rum, but something tastes off. Its been poisoned by the crew, you fall over and die. YOU LOSE! TYPE QUIT TO EXIT.",
+        "exits": [
+          
+        ],
+        "inventory": []
+      },
+      "REEF": {
+        "name": "Coral Reef",
+        "desc": "You decide to try your luck at navigating the reef. Just as you think you can pass through safely, a large rock pierces the bottom of the life boat. You sink slowly as the mermaids begin to swarm around you. YOU LOSE! TYPE QUIT TO EXIT.",
+        "exits": [
+          {
+            "verb": "",
+            "target": "",
+            "condition": ""
+          },
+          {
+            "verb": "",
+            "target": "",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "CAVE": {
+        "name": "Cave",
+        "desc": "You drag the boat inside the cave to discover the flickering light is a torch held by your previous crew members. You listen while hidden to discover that they are close to finding the treasure, but they are afraid to continue for fear of booby traps. They move into a larger corridor to the east: the only way forward.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "BTRAP",
+            "condition": ""
+          }
+          
+        ],
+        "inventory": []
+      },
+      "BTRAP": {
+        "name": "Mysterious Corridor",
+        "desc": "This large area of the cave is lined with gold and precious metals. The crew begins to shout with excitement. You move to keep yourself hidden and step on a pressurized stone. A large log with spikes is realeased and rolls through the crew, and is now coming towards you! You competed in the high jump during high school.",
+        "exits": [
+          {
+            "verb": "JUMP",
+            "target": "LIFE",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "LIFE": {
+        "name": "Treasure Room",
+        "desc": "You jump safely over the log. As the last remaining member of the crew you begin to grab what loot you can, but the cave is starting to collapse. You see a small ladder in the corner of the room, as well as an underwater passage. The original entrance is now blocked.  ",
+        "exits": [
+          {
+            "verb": "CLIMB",
+            "target": "OVERL",
+            "condition": ""
+          },
+          {
+            "verb": "SWIM",
+            "target": "UNWA",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "OVERL": {
+        "name": "Overlook",
+        "desc": "You reach the top of the ladder and reach a beautiful overlook. Your pockets are full with enough treasure to make for a wonderful life, and now you will forever be known as the Legend of Treasure Cove! CONGRATS! YOU WIN. TYPE QUIT TO EXIT.",
+        "exits": [],
+        "inventory": []
+      },
+      "UNWA": {
+        "name": "Sea",
+        "desc": "As you drop down in the water hoping to find an exit, you quickly find something else: a group of hungry piranas. YOU LOSE! TYPE QUIT TO EXIT.",
+        "exits": [
+          
+        ],
+        "inventory": []
+      }
     }
-  }
+}
