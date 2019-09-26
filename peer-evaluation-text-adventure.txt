@@ -1,0 +1,40 @@
+Name: Nathaniel Myer
+Date: 09/26/2019
+Project: Text Adventure
+Peer's repository: https://github.com/diesears/03-Text-adventure.git
+
+
+
+What is something you learned by reviewing your peer's project?
+I learned the importancce of clear references in code. I also learned how dumb players (me) can be and that sometimes the answer has to bbe spoon fed to them.
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+I liked how they kept the names of the names of the dictionaries short but desccriiptive so that it did not take long to make them a target but that it was always understood what was being targeted.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+The first room has a somewhat specific verb that is required to advancce to the next room. 
+While there is a hint I feel that more verbs should be added that map to break so that the player doesn't have to be so exact.
+ 
+
+What could have been clearer or better commented?
+Sincce the JSON was just dictionaries not mucch would be needed to be commented if anyone looking at the code understood how dictionaries worked.
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+Nothing was confusing in the code itself. Sincce the project closly followed the template everything was easy to follow and all the rooms and exits worked.
+ 
+
+Does the repository contain an appropriate LICENSE?
+Yes, the repository does comtain the appropriate LICENSE.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+They could have added more about how the python file is the engine whicch imports the JSON as the game date. 
+They ccould have also went into how the dictionaries in the JSON work as rooms in the game and that the verbs equal keeys which lead to other rooms (dictionaries).
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+I enjoyed the multiple paths and that there were choices that acctually had an impact on whether the player won or lost.
+
